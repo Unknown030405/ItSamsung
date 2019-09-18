@@ -13,9 +13,9 @@ class calculator{
     static void doEverything() {
     	System.out.println("Enter first number: ");
     	Scanner scan = new Scanner(System.in);
-    	long a = scan.nextLong();
+    	double a = scan.nextDouble();
     	System.out.println("Enter second number: ");
-    	long b = scan.nextLong();
+    	double b = scan.nextDouble();
     	System.out.println("Enter addition (+) or subtraction (-) or multiplication (*) or division (/): ");
     	char ch = scan.next().charAt(0);
     	switch(ch) {
