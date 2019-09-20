@@ -14,10 +14,6 @@ public class arrays {
 		}
 		System.out.println(mx);
 		System.out.println(ind_mx);
-		for(int i: arr) {
-			System.out.print(i);
-			System.out.print(' ');
-		}
 	}
 	static int[] randomarr() {
 		int[] ar = new int[12];
