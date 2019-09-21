@@ -1,34 +1,12 @@
-import java.util.*;
-
 public class arrays {
 	public static void main(String[] args) {
-		int[] arr = new int[12];
-		arr = randomarr();
-		int mx = 0;
-		int ind_mx = 0;
-		for(int i = 0; i < 12; i++) {
-			if(arr[i] >= mx) {
-				mx = arr[i];
-				ind_mx = i;
+		int[][] arr = new int[5][5];
+		for(int[] i: arr) {
+			for(int j: i) {
+				System.out.print(j);
+				System.out.print(' ');
 			}
+			System.out.println();
 		}
-		System.out.println(mx);
-		System.out.println(ind_mx);
-	}
-	static int[] randomarr() {
-		int[] ar = new int[12];
-		for(int i = 0; i < 12; i++) {
-			ar[i] = randint();
-		}
-		return ar;
-	}
-	static int randint() {
-		Random rand = new Random();
-		int i = rand.nextInt(16);
-		int a = rand.nextInt(2);
-		if (a == 0) {
-			return i;
-		}
-		return -i;
 	}
 }
