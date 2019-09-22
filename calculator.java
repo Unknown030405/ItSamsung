@@ -35,8 +35,8 @@ class calculator{
     }
     static boolean ask() {
     	Scanner in = new Scanner(System.in);
-    	System.out.println("If you want to continue enter 'Yes' without quotes, else enter 'stop' without qoutes");
-    	if (in.next().equals("Yes")){
+    	System.out.println("If you want to continue enter 'yes' without quotes, else enter 'stop' without qoutes");
+    	if (in.next().equalsIgnoreCase("Yes")){
     		return false;
     	}
 		return true;
