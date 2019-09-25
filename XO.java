@@ -9,6 +9,7 @@ public class XO {
 
 	public static void main(String[] args) {
 		while(true) {
+			InitGB();
 			drawGB();
 			while(win() == 0 && c < 9) {
 				c++;
@@ -53,6 +54,10 @@ public class XO {
 				break;
 			}
 		}
+	}
+	private static void InitGB() {
+		gameBoard = new int[3][3];
+		
 	}
 	private static boolean isFree(int one, int two) {
 		return gameBoard[one][two] == 0;
