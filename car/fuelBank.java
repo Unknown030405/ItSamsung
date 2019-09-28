@@ -5,10 +5,12 @@ public class fuelBank {
 	int left;
 	fuelBank(int Size){
 		this.Size = Size;
+		left = Size;
 	}
 	
 	public void refill(){
 		left = Size;
+		System.out.println("Вы заправились. Теперь в баке " + Size + " литров");
 	}
 	
 	public void drive() {

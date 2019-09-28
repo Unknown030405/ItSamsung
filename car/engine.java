@@ -5,6 +5,10 @@ public class engine {
 	Wheel backwheel = body.backWheels;
 	fuelBank bank = body.bank;
 	public void drive() {
+		if(!body.doors.locked) {
+			System.out.println("Двери открыты. Движение невозможно");
+			return;
+		}
 		if(bank.left == 0) {
 			System.out.println("Нет Топлива!!!");
 			return;
@@ -15,8 +19,11 @@ public class engine {
 		bank.drive();
 		frontwheel.rotate();
 		backwheel.rotate();
+		System.out.println("Машина двигается!");
 	}
 	public void stop() {
-		
+		frontwheel.stopRotate();
+		backwheel.stopRotate();
+		System.out.println("Машина остановлена!");
 	}
 }
