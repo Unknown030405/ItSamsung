@@ -4,12 +4,17 @@ public class cow extends herbivores{
 	
 	public cow(){
 		age = 10;
-		while(age != 0) {
-			move();
-			eatHerb();
-			sleep();
-			age-=1;
-		}
+		animalType = "Корова";
 	}
-
+	
+	public void live() {
+		if (age == 0) {
+			old();
+		}
+		move();
+		eatHerb();
+		sleep();
+		age-=1;
+	}
+	
 }

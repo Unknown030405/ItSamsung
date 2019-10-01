@@ -18,4 +18,8 @@ public class Animal {
 		System.out.println(animalType + " играет");
 	}
 	
+	public void old() {
+		System.out.println(animalType + "Слишком стар, чтобы что-то делать");
+	}
+	
 }
