@@ -13,6 +13,11 @@ public class zoo {
 		Cherepaha.live();
 		Barsik.live();
 		Sharik.live();
+		Murenka.age = 1;
+		Murenka.live();
+		Murenka.live();
+		Burushka.age = 0;
+		Burushka.live();
 	}
 
 }
