@@ -11,8 +11,8 @@ public class circle  extends figure{
 	
 	@Override
 	public double getSquare() {
-		System.out.println("Площадь равна: ");
 		return 3.14*r*r;
 //		return super.getSquare();
 	}
 }
+ 
