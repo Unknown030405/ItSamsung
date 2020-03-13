@@ -6,4 +6,9 @@ public class cats extends hunters{
 		System.out.println(animalType + "Пьет молоко");
 	}
 	
+	@Override
+	public void eatMeat() {
+		System.out.println(animalType + " ест мышку!!!");
+//		super.eatMeat();
+	}
 }

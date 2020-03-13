@@ -10,6 +10,7 @@ public class felisCatus extends cats{
 	public void live() {
 		if (age == 0) {
 			old();
+			return;
 		}
 		eatMeat();
 		sleep();
